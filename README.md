@@ -1,34 +1,43 @@
 # libadwaita-theme-changer
+
 Theme changer for Libadwaita
 
 ## Disclaimer!
+
 Use this script at your own risk!
+
 ## How it works?
-It just create simlinks between .themes and .config folder with assets and GTK 4.0 theme CSS files.
+
+It creates symlinks between `~/.local/share/themes` and `~/.config` with assets and GTK 4.0 theme CSS files.
 
 ## Requirements
-Theme must be prepared for GTK 4.0.<br/>
-In downloaded theme directory should be ``gtk-4.0`` and ``assets`` directories.
+
+- Selected theme must support GTK 4.0
 
 ## How to use?
-1. Download Python script from git:
+
+1. Clone this repository:
+
+```sh
+git clone https://github.com/otapliger/libadwaita-theme-changer
 ```
-git clone https://github.com/odziom91/libadwaita-theme-changer.git
-```
-2. Add run permissions to file:
-```
+
+2. Add run permissions to the script:
+
+```sh
 chmod +x libadwaita-tc.py
 ```
-3. Run script:
-```
+
+3. Run it:
+
+```sh
 ./libadwaita-tc.py
 ```
 
 ## How to reset to default Adwaita theme?
+
 Run script with --reset parameter:
-```
+
+```sh
 ./libadwaita-tc.py --reset
 ```
-
-## Contact
-Polish Discord channel "Polska Społeczność Linuxa": https://discord.gg/AnG2Kv6axS
